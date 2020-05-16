@@ -1,0 +1,297 @@
+:root{
+    --Strong-Cyan: hsl(171, 66%, 44%);
+    --Light-Blue: hsl(233, 100%, 69%);
+    --Dark-Grayish-Blue: hsl(210, 10%, 33%);
+    --Grayish-Blue: rgb(159, 171, 178);
+}
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Bai Jamjuree', sans-serif;
+}
+h1,h2,h3{
+    color: var(--Dark-Grayish-Blue);
+}
+p{
+    color: var(--Grayish-Blue);
+    margin-top: .8rem;
+}
+
+.container{
+    width: 100%;
+}
+
+.flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* header */
+
+.logo_div{
+    background-image: url(./images/bg-header-desktop.png);
+    display: block;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+}
+.logo{
+    margin: 8rem 0 3rem 0;
+}
+.padding{
+    max-width: 600px;
+}
+
+.flex.logo_sec{
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 4rem;
+    line-height: 1.8rem;
+}
+
+.btn{
+    color: white;
+    border-color:var(--Strong-Cyan);
+    border-radius: 25px;
+    padding: 12px 32px 10px 32px;
+    background-color: var(--Strong-Cyan);
+    margin: 2rem .5rem 5rem .5rem;
+    cursor: pointer;
+}
+.btn_second{
+    background-color: var(--Light-Blue);
+    border-color: var(--Light-Blue);
+}
+/* comtputersection */
+
+.flex.desktop{
+    margin: 0 5rem;
+    align-items: flex-start;
+    line-height: 1.8rem;
+}
+.computer_div{
+    margin: 0 4rem 0 -7rem;
+    flex: 2;
+}
+.computer{
+    width: 100%;
+}
+.search > div{
+    margin-top: 5rem;
+    padding: 0 2.5rem 0 1rem;
+}
+.search{
+    flex: 1;
+}
+/* devicesection */
+.device{
+    flex-direction: column;
+    text-align: center;
+    margin-top: 8rem;
+    line-height: 1.8rem;
+}
+.device img{
+    width: 100%;
+    margin:6rem 0;
+}
+
+.device > img{
+    margin: 0 1rem;
+}
+
+/* images section */
+.grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
+    text-align: center;
+    margin: 4rem 4rem;
+    line-height: 1.8rem;
+}
+.script > div{
+    padding: 2rem;
+    
+}
+
+.script img{
+    margin-bottom: 1rem;
+}
+.blacklist{
+    margin-top: -8px;
+}
+
+.images_com{
+    grid-template-columns: repeat(5, 1fr);
+    align-items: center;
+    margin-top: 10rem;
+}
+.images_com > div{
+    padding: 2rem;
+}
+.images_com img{
+    width: 100%;
+}
+
+.small{
+    text-align: center;
+    margin: 8rem 0 5rem 0;
+}
+/* footersection */
+.footer_sec{
+    flex-direction: row;
+    justify-content: start;
+    background-color: hsl(0, 0%, 92%);
+    color: var(--Dark-Grayish-Blue);
+    padding: 3rem;
+    
+}
+.flex.list{
+    align-items: flex-start;
+}
+
+.flex.list > ul{
+    margin: 0 2.5rem;
+    line-height: 3rem;
+}
+
+ul li{
+    list-style-type: none;
+}
+.icons{
+    margin-left: auto;
+}
+.icons li{
+    margin-right: 2rem;
+}
+
+.footer_logo{
+    margin: 0 5rem;
+    width: 100px;
+    max-width: 100%;
+}
+
+/* hovereffects */
+
+.list li:hover{
+    color: var(--Strong-Cyan);
+    cursor: pointer;
+}
+
+.btn:hover{
+    opacity: .7;
+}
+
+.social_icons:hover{
+    fill: var(--Strong-Cyan);
+}
+
+@media(max-width:800px){
+    
+    .logo_div{
+        background-image: url(./images/bg-header-mobile.png);
+        background-size: cover;
+        background-position: center;
+    }
+    .padding{
+        padding: 1rem;
+    }
+    
+    .flex{
+        flex-direction: column;
+    }
+    
+    .flex.logo_sec :nth-child(4){
+        margin-top: 8rem;
+    }
+    .btn{
+        margin: .5rem .5rem;
+        padding: 12px 64px 10px 64px;
+    }
+    .btn_first{
+        margin-top: 2rem;
+    }
+
+    
+    
+    /* computersectino */
+
+
+    
+    .computer{
+        margin: 0;
+        padding: 1rem;
+        text-align: center;
+    }
+    .flex.desktop{
+        margin: 0;
+        padding: 0;
+    }
+    .computer_div{
+        margin: 0;
+        padding: 0;
+    }
+
+    
+    
+    /* devicesection */
+
+
+    
+    .device{
+        padding: 1rem;
+        margin: 7rem 0;
+    }
+    .grid{
+        grid-template-columns: 1fr;
+        margin: 0;
+    }
+    .images_com{
+        margin-top: 3rem;
+        padding: 4rem;
+    }
+    .small{
+        padding: 1rem;
+        margin: 2rem 0 8rem 0;
+
+    }
+
+    
+    
+    /* footersection */
+
+
+    
+    .footer_sec{
+        padding: 1rem;
+        text-align: center;
+    }
+    .footer_logo{
+        margin-top: 2rem;
+    }
+    .flex.list{
+        margin-top: 2rem;
+    }
+    .flex.list > ul{
+        margin: 0;
+        margin: 0 auto;
+    }
+    .icons ul{
+        flex-direction: row;
+        margin: 2rem 0;
+    }
+    .icons li{
+        margin: 0 1rem;
+    }
+    .icons{
+        margin: 0 auto;
+    }
+   
+   
+}
