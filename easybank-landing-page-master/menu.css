@@ -24,7 +24,7 @@
     width: 60px ;
     height: 50px;
     margin-top: 5px;
-    z-index: 9;
+    z-index: 8;
     padding: 1rem;
 }
 .hamburger > div{
@@ -67,6 +67,12 @@
 }
 
 @media(max-width:950px){
+    .tricky {
+        display: none;
+    }
+    .inputbtn:checked ~ .tricky {
+        display: block;
+    }
     
     
     .header_list{
